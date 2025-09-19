@@ -54,6 +54,23 @@
             padding: 1rem;
             margin-top: 2rem;
         }
+
+        header img.logo-home {
+            width: 180px;
+            /* logo width on desktop */
+            height: auto;
+            /* keep aspect ratio */
+            display: block;
+            margin: 0 auto 1rem;
+            /* center and add spacing */
+        }
+
+        @media (max-width: 600px) {
+            header img.logo-home {
+                width: 120px;
+                /* smaller logo on mobile */
+            }
+        }
     </style>
 </head>
 
@@ -61,6 +78,8 @@
 
     <!-- Header -->
     <header>
+        <!-- Homepage Logo -->
+        <img src="assets/images/moria-cash-logo.svg" alt="Moria Cash Logo" class="logo-home" />
         <h1>Moria Cash</h1>
         <p>Building an open, non-custodial payment ecosystem for Moria Money</p>
         <nav>
